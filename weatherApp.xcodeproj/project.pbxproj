@@ -12,6 +12,9 @@
 		F3012E4D2EAF8DB400C4AE62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3012E4C2EAF8DB400C4AE62 /* Assets.xcassets */; };
 		F3012E502EAF8DB400C4AE62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3012E4F2EAF8DB400C4AE62 /* Preview Assets.xcassets */; };
 		F3012E5B2EAF9ECC00C4AE62 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3012E5A2EAF9ECC00C4AE62 /* WeatherModel.swift */; };
+		F3012E5F2EAFB30400C4AE62 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3012E5E2EAFB30400C4AE62 /* APIErrorResponse.swift */; };
+		F3012E612EAFB33900C4AE62 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3012E602EAFB33900C4AE62 /* NetworkError.swift */; };
+		F3012E632EAFB35100C4AE62 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3012E622EAFB35100C4AE62 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F3012E4F2EAF8DB400C4AE62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3012E5A2EAF9ECC00C4AE62 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		F3012E5C2EAFA24D00C4AE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3012E5E2EAFB30400C4AE62 /* APIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
+		F3012E602EAFB33900C4AE62 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F3012E622EAFB35100C4AE62 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 		F3012E592EAF9D4B00C4AE62 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				F3012E5E2EAFB30400C4AE62 /* APIErrorResponse.swift */,
+				F3012E602EAFB33900C4AE62 /* NetworkError.swift */,
+				F3012E622EAFB35100C4AE62 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -174,9 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3012E632EAFB35100C4AE62 /* NetworkManager.swift in Sources */,
+				F3012E5F2EAFB30400C4AE62 /* APIErrorResponse.swift in Sources */,
 				F3012E4B2EAF8DB300C4AE62 /* ContentView.swift in Sources */,
 				F3012E5B2EAF9ECC00C4AE62 /* WeatherModel.swift in Sources */,
 				F3012E492EAF8DB300C4AE62 /* weatherAppApp.swift in Sources */,
+				F3012E612EAFB33900C4AE62 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
