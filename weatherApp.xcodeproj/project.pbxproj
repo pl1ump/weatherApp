@@ -46,6 +46,7 @@
 		F3012E712EAFBB4200C4AE62 /* AppScreensNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreensNavigation.swift; sourceTree = "<group>"; };
 		F3012E732EAFBB6600C4AE62 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		F3012E752EAFBB8400C4AE62 /* WeatherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherScreen.swift; sourceTree = "<group>"; };
+		F3012E772EAFBF7000C4AE62 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 				F3012E4E2EAF8DB400C4AE62 /* Preview Content */,
 				F3012E5C2EAFA24D00C4AE62 /* Info.plist */,
 				F3012E642EAFB73000C4AE62 /* Localizable.xcstrings */,
+				F3012E772EAFBF7000C4AE62 /* Config.xcconfig */,
 			);
 			path = weatherApp;
 			sourceTree = "<group>";
@@ -242,6 +244,7 @@
 /* Begin XCBuildConfiguration section */
 		F3012E512EAF8DB400C4AE62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3012E772EAFBF7000C4AE62 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -305,6 +308,7 @@
 		};
 		F3012E522EAF8DB400C4AE62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3012E772EAFBF7000C4AE62 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
