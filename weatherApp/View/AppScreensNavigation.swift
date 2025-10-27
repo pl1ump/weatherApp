@@ -1,15 +1,19 @@
-//
-//  AppScreensNavigation.swift
-//  weatherApp
-//
-//  Created by Vladick  on 27/10/2025.
-//
-
 import SwiftUI
 
 struct AppScreensNavigation: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForecastView(viewModel: WeatherForecastViewModel(networkManager: NetworkManager()))
+                .tabItem {
+                    Image(systemName: "globe.europe.africa")
+                    Text("Forecast")
+                }
+            WeatherScreen(viewModel: WeatherViewModel(networKManager: NetworkManager()))
+                .tabItem {
+                    Image(systemName: "sun.max")
+                    Text("Weather now")
+                }
+        }
     }
 }
 
