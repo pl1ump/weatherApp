@@ -51,6 +51,11 @@ final class NetworkManager: NetworkService {
                 throw NetworkError.unknown(statusCode: httpResponse.statusCode, message: apiError?.message)
             }
         }
+        catch let error as NetworkError {
+            // Already classified above - rethrow as is, otherwise the typed
+            // status-code cases would collapse into .transportError.
+            throw error
+        }
         catch {
             throw NetworkError.transportError(error)
         }
